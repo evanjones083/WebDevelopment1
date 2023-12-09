@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Camping Adventure | Home Page</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/Logo_1.png" alt="MyCampingAdventure Logo" height="120"></a>
+        <h1>My Camping Adventure</h1>
+        <h3>Camping as it <i>should</i> be</h3>
+        <div id="accbtn">
+            <a href="signup.html">Sign Up</a>
+            <a href="signin.html">Log In</a>
+        </div>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu"> 
+        <ul>
+            <li><a href="lists.html">Camping Lists</a>
+                <ul>
+                    <li><a href="checklist.html">Checklists</a></li>
+                    <li><a href="shoppinglist.html">Shopping Lists</a></li>
+                </ul>
+            </li>
+            <li><a href="events.html">Events</a>
+                <ul>
+                    <li><a href="upcoming.html">Upcoming Events</a></li>
+                    <li><a href="archived.html">Archived Events</a></li>
+                </ul>
+            </li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="feed.html">Social Feed</a></li>
+            <li><a href="account">My Account</a></li>
+            <li><a>About Us &amp; Contact</a>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="main">
+            <img id="hp1" src="images/waterfall_med.jpg" srcset="images/waterfall_small.jpg 400w, images/waterfall_med.jpg 800w, images/waterfall_large.jpg 1024w" alt="Waterfall" sizes="(min-width:1500px) 1024px, (min-width:1100px) 800px, 100vw">
+            <h1>What will your next camping experience be?</h1>
+            <p id="p1">Camping is about making new memories,
+            when you go out; the experience comes out.
+            Whether you want some peace or an 
+            action-filled weekend, camping offers both 
+            without compromise.
+            </p>
+            <br>
+            <p id="p2">Join us today to get in 
+            on the fun or tranquility. Sign up for our email
+            newspaper for updates on community events and 
+            new updates to the site. Browse our camping lists
+            and guides to better prepare yourself to have
+            a stress-free adventure. Explore our map to find
+            awesome spots and new experiences. Your next camping
+            adventure awaits you! Don't let it pass you by!
+            </p>
+        </section>
+        <!--Bottom half of the page-->
+        <div id="bottom">
+        <div id="list1">
+            <h2><a href="lists.html#checklist">Checklists</a></h2>
+            <ul>
+                <li><a href="lists.html#checklist1">General Checklist</a></li>
+                <li><a href="lists.html#checklist2">Relaxing Essentials</a></li>
+                <li><a href="lists.html#checklist3">Minimalist</a></li>
+            </ul>
+        </div>
+        <div id="list2">
+            <h2><a href="lists.html#shoppinglist">Shopping Lists</a></h2>
+            <ul>
+                <li><a href="lists.html#shopping1">The Basics</a></li>
+                <li><a href="lists.html#shopping2">Hiking Trip</a></li>
+                <li><a href="lists.html#shopping3">Relaxing Getaway</a></li>
+            </ul>
+        </div>
+        <div id="feed">
+            <h2><a href="feed.html">Social Feed</a></h2>
+            <div class="post">
+                <h3>George Says..</h3>
+                <p>Today was great I hope to see you all again
+                    soon!
+                </p>
+            </div>
+            <div class="post">
+                <h3>Patricia Says..</h3>
+                <p>New camping event posted! Sign up today!</p>
+            </div>
+            <div class="post">
+                <h3>Sabrina Says..</h3>
+                <p>Can't wait till we go to Sprewll Bluff! It 
+                    is going to be so fun!
+                </p>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 MyCampingAdventure.com <br>All rights reserved</p>
+        <p>Website by Evan Jones</p>
+    </footer>
+</body>
+</html>

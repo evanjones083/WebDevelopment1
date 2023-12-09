@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Camping Adventure | About Us</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/Logo_1.png" alt="MyCampingAdventure Logo" height="120"></a>
+        <h1>My Camping Adventure</h1>
+        <h3>Camping as it <i>should</i> be</h3>
+        <div id="accbtn"><a href="signup.html">Sign Up</a><a href="signin.html">Log In</a></div>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="lists.html">Camping Lists</a>
+                <ul>
+                    <li><a href="checklist.html">Checklists</a></li>
+                    <li><a href="shoppinglist.html">Shopping Lists</a></li>
+                </ul>
+            </li>
+            <li><a href="events.html">Events</a>
+                <ul>
+                    <li><a href="upcoming.html">Upcoming Events</a></li>
+                    <li><a href="archived.html">Archived Events</a></li>
+                </ul>
+            </li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="feed.html">Social Feed</a></li>
+            <li><a href="account">My Account</a></li>
+            <li><a class="current">About Us &amp; Contact</a>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div id="about">
+        <h2>About Us</h2>
+        <p>My Camping Adventure is all about finding new
+            opportunities and experiences. We strive to 
+            make camping stress-free and enjoyable. Our
+            site contains detailed guides and lists for 
+            many different types of camping adventures
+            and we are proud to support a community of
+            campers looking to interact with others.
+        </p>
+        <br>
+        <p>
+            Camping is about exploring and relaxing so 
+            My Camping Adventure is here to cater to 
+            anyone who wants to dip their toes in for 
+            the first time or seasoned experts embarking
+            on their 100th camping trip. Our website hosts 
+            events for all ages and needs, we exhibit a 
+            welcoming and warm spirit to everyone!
+        </p>
+        <br>
+        <p>
+            Join today to gain access to community events, 
+            comprehensive camping guides and detailed shopping 
+            and checklists. View our map to find new spots 
+            or just to explore all the possibilities that 
+            lie out there waiting to be enjoyed.
+        </p>
+        <br>
+        <p>For more information feel free to <a href="contact.html">
+            contact us!
+        </a></p>
+        <blockquote>“Wherever you camp in the world, the campfire will be one of the things that sticks in your memory the most!”</blockquote>
+        <p>― Mehmet Murat ildan</p>
+        <p><a href="https://gadnr.org/Camping">Visit the Georgia DNR Camping website for even more camping opportunities!</a></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 MyCampingAdventure.com <br>All rights reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,449 @@
+/*Responsive Styling*/
+@media only screen and (max-width: 1110px) {
+    body {
+        font-size: 80%;
+    }
+    #contact {
+        grid-template-columns: 25% 75% !important;
+        grid-template-rows: auto;
+        grid-template-areas: "cimg ccon";
+    }
+    #cimg {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: "1 2 3";
+    }
+    #contact {
+        grid-template-columns: auto !important;
+        grid-template-rows: auto auto !important;
+        grid-template-areas: 
+        "cimg"
+        "ccon" !important;
+    }
+    #cimg img {
+        max-height: 250px;
+    }
+    #info h1 {
+        padding: 2em 0 !important;
+    }
+}
+@media only screen and (max-width: 915px) {
+    #mobile_menu {
+        display: block !important;
+    }
+    #nav_menu {
+        display: none;
+    }
+    .slicknav_menu {
+        background-color: var(--ccolor-1) !important;
+    }
+    #cimg img {
+        max-height: 175px;
+    }
+}
+@media only screen and (max-width: 760px) {
+    header img {
+        float: none !important;
+    }
+    header h3 {
+        margin-left: 10% !important;
+    }
+}
+@media only screen and (max-width: 560px) {
+    body {
+        font-size: 75% !important;
+        min-width: 430px !important;
+    }
+    #main {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "img"
+        "headline"
+        "sec"
+        "sec2";
+    }
+    #hp1 {
+        grid-area: img;
+        justify-self: center;
+        padding: 0;
+        margin: 0;
+    }
+    #p1 {
+        grid-area: sec;
+    }
+    #p2 {
+        grid-area: sec2;
+    }
+    #main h1 {
+        grid-area: headline;
+    }
+    #bottom {
+        grid-template-columns: auto !important;
+        grid-template-rows: auto auto auto !important;
+        grid-template-areas: 
+        "i"
+        "g"
+        "h" !important;
+    }
+    #bottom a {
+        font-weight: bold;
+    }
+    footer {
+        font-size: 120% !important;
+    }
+    #event {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(6, auto) !important;
+        grid-template-areas: 
+        "head"
+        "event1"
+        "event2"
+        "event3"
+        "event4"
+        "evepl" !important;
+    }
+    #cimg img {
+        max-height: 150px;
+    }
+    #info dd {
+        margin-right: 10px;
+    }
+}
+/*Base Styling*/
+:root {
+    --ccolor-1: rgb(235, 178, 104);
+    --ccolor-2: rgb(245, 247, 217);
+    --bcolor-1: rgb(130, 194, 194);
+    --tcolor-1: rgb(255, 255, 255);
+    --tcolor-2: black;
+}
+html {
+    height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0 auto;
+    border: 3px solid var(--ccolor-1);
+    background-color: var(--bcolor-1);
+    display: grid;
+    grid-template-columns: repeat(2, .5fr) 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "a a a"
+    "b b b"
+    "c c c"
+    "f f f";
+}
+#mobile_menu {
+    display: none;
+}
+a:hover {
+    font-style: italic;
+}
+/*Stlye Rules for the header*/
+header {
+    padding: 1em 0 3em 0;
+    background-image: linear-gradient(90deg, white 0%, white 50%, var(--ccolor-1) 60%, var(--ccolor-1) 100%);
+    grid-area: a;
+}
+header h1 {
+    padding: .5em 0;
+}
+header h3 {
+    margin-left: 15em;
+}
+header img {
+    float: left;
+    padding: .5em 1em;
+}
+header div {
+    float: right;
+    position: relative;
+    top: -5em;
+}
+header div a {
+    margin-right: 3em;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: .25em;
+    font-weight: bold;
+    color: black;
+    background-color: var(--ccolor-2);
+}
+/*Style Rules for the navmenu*/
+nav {
+    grid-area: b;
+}
+#nav_menu ul {
+    list-style-type: none;
+    clear: both;
+    position: relative;
+}
+#nav_menu ul li {
+    float: left;
+    width: 16.66%;
+}
+#nav_menu a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--tcolor-1);
+    background-color: var(--ccolor-1);
+}
+#nav_menu a.current {
+    color: var(--ccolor-2);
+    text-decoration: underline;
+}
+#nav_menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 16.66%;
+}
+#nav_menu ul li ul li {
+    float: none;
+    width: 100%;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/*Style rules for the main content*/
+main {
+    grid-area: c;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "d"
+    "e";
+}
+/*Index Page Specifics*/
+#main {
+    grid-area: d;
+    padding-top: 2.5em;
+}
+#main img {
+    padding: 0 1.5em 1em 1.5em;
+    float: left;
+    max-width: 40%;
+    min-width: 240px;
+    max-height: 315px;
+}
+#main h1 {
+    padding: 1em 0;
+}
+#main>p {
+    font-size: 125%;
+    padding: 0 2em 1em 0;
+}
+#bottom {
+    grid-area: e;
+    display: grid;
+    grid-template-columns: repeat(2, .5fr) 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "g h i";
+}
+#list1 {
+    grid-area: g;
+}
+#list2 {
+    grid-area: h;
+}
+#list1, #list2 {
+    background-color: var(--ccolor-1);
+}
+#list1 h2, #list2 h2 {
+    text-align: center;
+    padding: 1em 0;
+}
+#list1 ul, #list2 ul {
+    list-style-type: none;
+}
+#list1 ul li, #list2 ul li {
+    padding: 1.027em 0;
+    text-align: center;
+    border: 2px solid var(--bcolor-1);
+}
+#list1 ul li a, #list2 ul li a, #list1 h2 a, #list2 h2 a{
+    text-decoration: none;
+    color: var(--tcolor2);
+}
+#feed {
+    grid-area: i;
+    padding-left: .5em;
+    background-color: var(--ccolor-1);
+}
+#feed h2 {
+    text-align: center;
+    padding: 1em 0 1em 0;
+    background-color: var(--ccolor-1);
+    border-bottom: 3px solid var(--bcolor-1);
+}
+#feed h3{
+    text-indent: 15px;
+    padding: .25em 0;
+}
+#feed p {
+    font-size: 115%;
+    font-weight: 100;
+}
+#feed h2 a {
+    text-decoration: none;
+    color: var(--tcolor-2);
+}
+/*About Page Specifics*/
+#about {
+    text-align: center;
+    padding: 2em;
+}
+#about p {
+    padding-top: 1em;
+    font-size: 112%;
+}
+#about blockquote {
+    padding-top: 2em;
+    font-style: italic;
+    font-weight: bold;
+}
+/*Contact Page Specifics*/
+#contact {
+    display: grid;
+    grid-template-columns: .75fr 1.25fr;
+    grid-template-rows: auto;
+    grid-template-areas: "cimg ccon";
+}
+#info {
+    grid-area: ccon;
+    background-color: var(--ccolor-2);
+}
+#info h1 {
+    text-align: center;
+    padding: 10em 0;
+    color: var(--tcolor-2);
+}
+#info p {
+    padding-left: 2em;
+    font-size: 125%;
+    padding-top: 2em;
+}
+#info img {
+    vertical-align: middle;
+    margin-right: 15px;
+    width: 45px;
+}
+#info h2 {
+    padding: 2em;
+    text-align: center;
+}
+#info dl {
+    margin-left: 2em;
+}
+#info dt {
+    font-weight: bold;
+    padding-top: 1em;
+    padding-bottom: .25em;
+}
+#info dd {
+    padding-left: 2em;
+}
+#cimg {
+    grid-area: cimg;
+}
+aside {
+    display: grid;
+    grid-template: auto auto auto / auto;
+    grid-template-areas: 
+    "1"
+    "2"
+    "3";
+}
+aside img#1 {
+    grid-area: 1;
+}
+aside img#2 {
+    grid-area: 2;
+}
+aside img#3 {
+    grid-area: 3;
+}
+/*Event Page Specifics*/
+#event {
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "head head"
+    "event1 event2"
+    "event3 event4"
+    "evepl evepl";
+}
+#event section {
+    grid-area: head;
+}
+#event h1, #event h3 {
+    text-align: center;
+    padding: 1em 0;
+}
+#event p {
+    text-align: center;
+    padding-bottom: 2em;
+}
+#event1 {
+    grid-area: event1;
+}
+#event2 {
+    grid-area: event2;
+}
+#event3 {
+    grid-area: event3;
+}
+#event4 {
+    grid-area: event4;
+}
+#evepl {
+    grid-area: evepl;
+}
+.event {
+    display: block;
+    background-color: var(--ccolor-1);
+    height: 250px;
+    margin: 2px;
+    border-radius: 4px;
+}
+.event h2 {
+    text-align: center;
+    padding: .25em 0;
+}
+.event p {
+    text-align: left !important;
+    padding-left: 1em;
+}
+.event a {
+    text-decoration: none;
+    color: var(--tcolor-2);
+}
+/*Style rules for the footer*/
+footer {
+    font-size: 70%;
+    background-color: white;
+    border-top: 3px solid var(--ccolor-1);
+    grid-area:  f;
+}
+footer p {
+    text-align: center;
+    padding: 1em 0;
+}

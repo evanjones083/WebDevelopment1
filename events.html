@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Camping Adventure | Events</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/Logo_1.png" alt="MyCampingAdventure Logo" height="120"></a>
+        <h1>My Camping Adventure</h1>
+        <h3>Camping as it <i>should</i> be</h3>
+        <div id="accbtn"><a href="signup.html">Sign Up</a><a href="signin.html">Log In</a></div>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="lists.html">Camping Lists</a>
+                <ul>
+                    <li><a href="checklist.html">Checklists</a></li>
+                    <li><a href="shoppinglist.html">Shopping Lists</a></li>
+                </ul>
+            </li>
+            <li><a href="events.html" class="current">Events</a>
+                <ul>
+                    <li><a href="upcoming.html">Upcoming Events</a></li>
+                    <li><a href="archived.html">Archived Events</a></li>
+                </ul>
+            </li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="feed.html">Social Feed</a></li>
+            <li><a href="account">My Account</a></li>
+            <li><a>About Us &amp; Contact</a>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main  id="event">
+        <section>
+            <h1>Welcome to the event center!</h1>
+            <p>Events are hosted by the community and members. To create a new event, <a href="eventpl.html">fill out the event form</a>.</p>
+        </section>
+        <div id="event1" class="event">
+            <h2><a href="event1.html">Hike the Mountain!</a></h2>
+            <p><strong>Location:</strong> Rocky Mountain Park</p>
+            <p>Join us for a hiking trip! The hike will be split into 3
+                parts and you can participate in any part or all of them. 
+                We will be following the trails and I suggest bringing 
+                the items from the hiking shopping list located in the 
+                lists section. Let's make this year's hiking trip the biggest yet!
+            </p>
+        </div>
+        <div id="event2" class="event">
+            <h2><a href="event2.html">Animal and Plant seeing trip</a></h2>
+            <p><strong>Location:</strong> To be decided</p>
+            <p>New camping guides are looking to test their skills by leading
+                small groups in search of various plant and animal life. On this 
+                trip you will learn how to identify different forms of trees, plants, 
+                and animal markings. This event will only last a few hours but anyone is welcome
+                to join in on the fun!
+            </p>
+        </div>
+        <div id="event3" class="event">
+            <h2><a href="event3.html">River Float 2023</a></h2>
+            <p><strong>Location:</strong> Flint River Park</p>
+            <p>This year's river float will be starting at Sprewell Bluff and
+                will continue past the bridge. Anyone who wants to join can, and we would
+                like a large group for this years float. Bring anything you want and I 
+                suggest bringing your own floats or kayaks as the campground will only
+                have a limited number to rent out.
+            </p>
+        </div>
+        <div id="event4" class="event">
+            <h2><a href="event4.html">Cool nights in the wilderness</a></h2>
+            <p><strong>Location:</strong> Riverbend Camping Ground</p>
+            <p>A 2 night camping extravaganza has been planned for the Riverbend campground.
+                We do this every 2 years and it is always a great time so feel free to join in!
+                Half of the campground is available to anyone who signs up for this event.
+            </p>
+        </div>
+        <div id="evepl">
+            <h3>Event Guide</h3>
+            <p>To join in on a event click the title of the event to visit it's page</p>
+            <br>
+            <p></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 MyCampingAdventure.com <br>All rights reserved</p>
+    </footer>
+</body>
+</html>

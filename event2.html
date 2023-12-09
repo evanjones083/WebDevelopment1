@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Camping Adventure | Animal and Plant seeing trip</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/Logo_1.png" alt="MyCampingAdventure Logo" height="120"></a>
+        <h1>My Camping Adventure</h1>
+        <h3>Camping as it <i>should</i> be</h3>
+        <div id="accbtn"><a href="signup.html">Sign Up</a><a href="signin.html">Log In</a></div>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="lists.html">Camping Lists</a>
+                <ul>
+                    <li><a href="checklist.html">Checklists</a></li>
+                    <li><a href="shoppinglist.html">Shopping Lists</a></li>
+                </ul>
+            </li>
+            <li><a href="events.html">Events</a>
+                <ul>
+                    <li><a href="upcoming.html">Upcoming Events</a></li>
+                    <li><a href="archived.html">Archived Events</a></li>
+                </ul>
+            </li>
+            <li><a href="map.html" class="current">Map</a></li>
+            <li><a href="feed.html">Social Feed</a></li>
+            <li><a href="account">My Account</a></li>
+            <li><a>About Us &amp; Contact</a>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>This Page is Under Construction</h1>
+    </main>
+    <footer>
+        <p>&copy; 2023 MyCampingAdventure.com <br>All rights reserved</p>
+    </footer>
+</body>
+</html>
